@@ -1,5 +1,6 @@
 import Card from '../card/card.jsx';
 import Style from './main.module.css';
+import { posts } from "../../data/posts.js";
 
 function Main() {
   return (
@@ -9,7 +10,9 @@ function Main() {
           <h1 className={`${Style.title} col-12`}>
             Titolo pagina
           </h1>
-          <Card />
+          {posts.map((posts) => {
+            return <Card key={posts.id} title={posts.title} image={posts.image} />;
+          })}
         </div>
       </div>
     </main>

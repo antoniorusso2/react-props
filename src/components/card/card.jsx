@@ -1,15 +1,17 @@
+/* eslint-disable react/prop-types */
 import Style from './card.module.css';
 import Btn from '../btn/card-btn.jsx';
-// import { posts } from "../../data/posts.js";
+import placeholder from '../../assets/placeholder.png';
 
-function Card() {
+
+function Card({ title, image }) {
   return (
-    <div className="col-4">
+    <div className="col-6">
       <div className={Style.card}>
-        <img className={Style.card__img} src="https://placehold.co/600x400" alt="" />
+        <img className={Style.card__img} src={image || placeholder} alt="" />
         <div className={Style.card__body}>
           <h3 className={Style.card__title}>
-            Titolo Card
+            {title}
           </h3>
           <p className={Style.card__text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, porro. Nesciunt corporis doloremque nihil voluptate id incidunt praesentium illo quibusdam!

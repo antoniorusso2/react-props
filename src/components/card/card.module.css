@@ -14,7 +14,7 @@
 }
 
 .card__img {
-  max-width: 100%;
+  width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
   object-position: center;
