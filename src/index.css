@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Jura:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+html {
+  font-family: "Open Sans",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.col-12 {
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
