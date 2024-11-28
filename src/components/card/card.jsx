@@ -4,7 +4,7 @@ import Btn from '../btn/card-btn.jsx';
 import placeholder from '../../assets/placeholder.png';
 
 
-function Card({ title, image }) {
+function Card({ title, image, tags }) {
   return (
     <div className="col-6">
       <div className={Style.card}>
@@ -13,6 +13,17 @@ function Card({ title, image }) {
           <h3 className={Style.card__title}>
             {title}
           </h3>
+          {
+            tags ?
+
+              <div className="banners">
+                {tags.map((tag, index) => {
+                  return <p className={`tag_banner ${tag}`} key={index}>{tag}</p>;
+                })}
+              </div>
+
+              : null}
+
           <p className={Style.card__text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, porro. Nesciunt corporis doloremque nihil voluptate id incidunt praesentium illo quibusdam!
           </p>

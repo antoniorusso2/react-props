@@ -65,6 +65,39 @@ button {
   flex-basis: calc(6 * 100% / 12);
 }
 
+/* 
+banner per i tag di ogni immagine posizionati sotto al titolo e con colori diversi in base al tipo di tag
+*/
+.banners {
+  display: flex;
+  align-items: center;
+  column-gap: 0.3rem;
+  font-size: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.tag_banner {
+  line-height: 2em;
+  padding: 0 0.5em;
+  border-radius: 0.4em;
+}
+
+.tag_banner.html {
+  background-color: paleturquoise;
+}
+
+.tag_banner.php {
+  background-color: aquamarine;
+}
+
+.tag_banner.css {
+  box-shadow: 0 0 0.8em -0.3em rgba(0, 0, 0, 0.5);
+}
+
+.tag_banner.js {
+  background-color: greenyellow;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 16px;
